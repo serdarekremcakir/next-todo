@@ -19,6 +19,9 @@ const initialState: TodoState = {
             { id: 1, title: 'todo 1', completed: false },
             { id: 2, title: 'todo 2', completed: true },
             { id: 3, title: 'todo 3', completed: false },
+            { id: 4, title: 'todo 4', completed: true },
+            { id: 5, title: 'todo 5', completed: false },
+
         ],
         loading: false,
         error: "",
