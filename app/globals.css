@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+  .addInput{
+    @apply border-2 border-gray-400 rounded-md p-2 text-black
+  }
+
+  .addBtn{
+    @apply ml-2 rounded-md p-2 px-6 hover:bg-gray-600 transition-all border-gray-400 border-2
+  }
+
+  .fetchBtn{
+    @apply p-3 bg-green-500 text-gray-300 rounded-md mb-5  md:absolute top-10 right-10
+  }
+
+  .tabWrapper{
+    @apply z-50 w-[90%] md:w-auto  md:min-w-[40%]  gap-3 mb-3 flex-col md:flex-row flex items-center justify-between
+  }
+
+  .toggleTypeBtn{
+    @apply py-1 border-2 px-3 rounded-md border-gray-300 hover:bg-gray-700 
+  }
+
+  .rowListWrapper{
+    @apply w-[90%] max-w-xl px-3
+  }
+
+  .itemActionBtn{
+    @apply bg-black rounded-xl p-1 px-2 
+  }
+
+  .itemTitle{
+    @apply flex-1 px-2 break-all	
+  }
+
+  .itemEditSaveBtn{
+    @apply mx-2 rounded-md p-1 px-2 hover:bg-gray-600 transition-all border-gray-200 border-2 max-h-12
+  }
+
+  .itemEditInput{
+    @apply w-full border-2 ml-2 border-gray-400 rounded-md p-1 text-black  max-h-12
+  }
+
+  .itemEditWrapper{
+    @apply flex-1 flex w-full
+  }
+
+  .galleryImg{
+    @apply h-[70%] mb-3 rounded-md
+  }
+
+  .itemWrapper{
+    @apply hover:bg-gray-400 cursor-pointer bg-gray-600 rounded-md flex 
+  }
+
+  .galleryWrapper{
+    @apply  itemWrapper text-center flex-col justify-center items-center border border-gray-200 h-full  pb-3
+  }
+
+  .listWrapper{
+    @apply itemWrapper p-3 mb-2 justify-between items-center
+  }
+}
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
